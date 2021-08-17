@@ -9,8 +9,8 @@ void printf(char* str)
 }
 
  typedef void (*constructor)();
- constructor start_ctors;
- constructor end_ctors;
+ /* extern "C" */ constructor start_ctors;
+ /* extern "C" */ constructor end_ctors;
 
 extern "C" void callConstructors()
 {
