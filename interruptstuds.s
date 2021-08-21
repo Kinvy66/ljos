@@ -28,9 +28,9 @@ HandleInterruptRequest 0x01
 int_bottom:
 
     pusha
-    puhsl %ds
+    pushl %ds
     pushl %es
-    pushl &fs
+    pushl %fs
     pushl %gs
 
     push %esp
